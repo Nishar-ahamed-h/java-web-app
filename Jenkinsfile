@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'linux' }  // Use a Jenkins agent labeled 'linux'
+    agent any  // Use a Jenkins agent labeled 'linux'
 
     environment {
         SONARQUBE_SERVER = 'sonar'  // Ensure this matches the name of your SonarQube server in Jenkins
